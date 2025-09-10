@@ -9,3 +9,81 @@
 a {
     text-decoration: none;
 }
+
+.centar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.centar h1 {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background: #f00;
+    border-radius: 50%;
+}
+
+.small {
+    padding: 10px;
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid #131313;
+    border-left: 2px solid #131313;
+    border-radius: 50%;
+    animation: small 1s linear infinite;
+}
+
+@keyframes small {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.medium {
+    padding: 10px;
+    border-top: 2px solid transparent;
+    border-right: 2px solid #131313;
+    border-bottom: 2px solid #131313;
+    border-left: 2px solid transparent;
+    border-radius: 50%;
+    animation: medium 1.5s linear infinite;
+}
+
+@keyframes medium {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+.large {
+    padding: 10px;
+    border-top: 2px solid #131313;
+    border-right: 2px solid #131313;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-radius: 50%;
+    animation: large 2s linear infinite;
+}
+
+@keyframes large {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
